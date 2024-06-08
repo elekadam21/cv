@@ -1,0 +1,13 @@
+body {
+  background-color: black;
+}
+
+#cv {
+  margin: auto;
+  background-color: white;
+  display: block;
+  height: 1754px;
+  width: 1240px;
+  padding: 20px;
+  box-sizing: border-box;
+}
