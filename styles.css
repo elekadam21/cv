@@ -1,16 +1,33 @@
-body {
+@page {
+  size: 1240px 1754px;
+  margin: 0;
+}
+
+html, body {
+  width: 1240px;
+  height: 1754px;
+  margin: 0 auto;
+  padding: 0;
   background-color: black;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 #cv {
   margin: auto;
   background-color: #00172b;
   display: flex;
-  height: 1754px;
+  min-height: 1754px;
   width: 1240px;
   box-sizing: border-box;
-  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -55,7 +72,7 @@ body {
 #interests {
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 20px;
+  /* padding-bottom: 10px; */
 }
 
 .contact,
@@ -69,7 +86,7 @@ body {
 .interest-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 12px 20px;
 }
 
 .interest,
@@ -90,7 +107,7 @@ img.icon {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 29px;
   font-size: 20px;
 }
 
@@ -112,22 +129,36 @@ img.icon {
 
 #experiences h3,
 #education h3,
-#references h3 {
+#references h3,
+#recent-projects h3 {
   border-bottom: 2px solid #00172b;
   padding-bottom: 5px;
   margin: 0;
 }
 
-.experience:first-of-type {
-  padding-top: 20px;
+.experience {
+  padding-top: 15px;
 }
 
-.experience:not(:first-of-type) {
-  padding-top: 10px;
+a.website  {
+  color: black;
+  font-weight: bold;
 }
 
 .description ul {
   margin: 10px;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+img.website {
+  color: black;
+  border-radius: 50%;
+  width: 25px;
 }
 
 .job-title,
@@ -148,6 +179,30 @@ img.icon {
   line-height: 25px;
 }
 
+.technologies h5 {
+  margin: 5px 0 0 0;
+}
+
+.technology-list {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 10px;
+}
+
+.technology {
+  background-color: #00172b;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.extra-info h5{
+  margin: 0;
+}
+
 .school {
   padding-top: 20px;
 }
@@ -162,7 +217,7 @@ img.icon {
 .skill-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 7px;
 }
 
 .skill {
@@ -214,5 +269,15 @@ img.skill-icon {
 
 .reference {
   padding-top: 20px;
+  font-weight: bold;
+}
+
+.projects {
+  padding-top: 20px;
+  margin: 0;
+}
+
+.project a {
+  color: black;
   font-weight: bold;
 }
