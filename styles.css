@@ -3,7 +3,8 @@
   margin: 0;
 }
 
-html, body {
+html,
+body {
   width: 1240px;
   height: 1754px;
   margin: 0 auto;
@@ -72,7 +73,6 @@ a:hover {
 #interests {
   padding-left: 50px;
   padding-right: 50px;
-  /* padding-bottom: 10px; */
 }
 
 .contact,
@@ -140,7 +140,7 @@ img.icon {
   padding-top: 15px;
 }
 
-a.website  {
+a.website {
   color: black;
   font-weight: bold;
 }
@@ -199,7 +199,7 @@ img.website {
   font-weight: bold;
 }
 
-.extra-info h5{
+.extra-info h5 {
   margin: 0;
 }
 
@@ -275,9 +275,18 @@ img.skill-icon {
 .projects {
   padding-top: 20px;
   margin: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
-.project a {
+.project {
   color: black;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project img {
+  width: 80px;
 }
