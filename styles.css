@@ -86,7 +86,9 @@ a:hover {
 .interest-list {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 12px 20px;
+  height: 102px;
 }
 
 .interest,
