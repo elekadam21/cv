@@ -209,6 +209,10 @@ img.website {
   font-style: italic;
 }
 
+.technologies {
+  padding-left: 20px;
+}
+
 .technologies h5 {
   margin: 5px 0 0 0;
 }
